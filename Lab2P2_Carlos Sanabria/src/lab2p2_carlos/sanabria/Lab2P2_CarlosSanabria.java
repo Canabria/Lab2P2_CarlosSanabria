@@ -38,7 +38,10 @@ public static Scanner leer= new Scanner(System.in);
                     System.out.println("Ingrese el numero de serie: ");
                     int num_s=leer.nextInt();
                      for (int i = 0; i < clist.size(); i++) {
-                        
+                        while(clist.get(i).getNumeroS()==num_s){
+                            System.out.println("El numero de serie que ingreso ya existe porfavor ingrese otro: ");
+                            num_s=leer.nextInt();
+                        }
                     }
                     System.out.println("Ingrese el capacidad disco duro: ");
                     int capcidadD=leer.nextInt();
